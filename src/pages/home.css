@@ -1,0 +1,187 @@
+body{
+    background-image: url("/public/images/bg.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+body::-webkit-scrollbar{
+    display: none;   
+}
+.container{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.home{
+    height: 90vh;
+    width: 100%;
+    padding: 2vh;
+    /* border-radius: 10px;
+    margin: 2vh; */
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+}
+.home::-webkit-scrollbar{
+    display: none;
+}
+
+.s1{
+    display: flex;
+    padding-left: 2vh;
+    width: 100%;
+    justify-content: center;
+}
+.s2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top:4%;
+    gap: 5vh;
+}
+.c{
+    height: 5vh;
+    width: 20vh;
+    padding-top: 4vh;
+    animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+.b1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    height: 70vh;
+    padding: 2vh;
+    padding-left: 15vh;
+    transform: translateX(-100%);
+    animation: slideInTop 0.7s forwards;
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+.b2{
+    height: 70vh;
+    background-image: url('/public/images/mine.png');
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-in-out;
+    transform: translateX(-100%);
+    animation: slideInRight 0.7s forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* .b2:hover{
+    height: 68vh;
+    width: 68%;
+} */
+.hi{
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.deepak{
+    font-size: 2.5em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #4e63b4;
+}
+.tagline{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.tagline {
+    background: linear-gradient(
+        to right,
+        rgb(180, 77, 77) 20%,
+        #3a4bb7 30%,
+        #e85a5a 70%,
+        #3a4bb7 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+    .btn {
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 600 !important;
+        background: #1c26af !important;
+        color: #ffffff !important;
+        cursor: pointer;
+        font-size: 1.2em !important;
+        padding: 2vh !important;
+        border: 0;
+        transition: all 0.5s;
+        border-radius: 10px;
+        width: 70%;
+        position: relative;
+        transition: all 0.5s !important ;
+        
+    }
+    
+    .btn::after {
+        content: "\2192"; /* Content is set to the icon's Unicode character */
+        font-family: "Font Awesome 5 Pro"; /* Font Awesome 5 Pro used for the icon */
+        position: absolute; /* Ensure absolute positioning */
+    right: 20%; /* Adjust as needed */
+    top: 50%; /* Adjust as needed */
+    transform: translateY(-50%); /* Center vertically */
+    opacity: 0; /* Icon is initially hidden */
+    transition: opacity 0.5s ease-in; /* Transition for opacity */
+    }
+    
+    .btn:hover {
+        background: #3038b1 !important;
+        transition: all 0.5s ease-in-out !important ;
+        box-shadow: 0px 6px 15px #00000061;
+        /* padding: 1.5rem 3.5rem 1.5rem 1.5rem; */
+        padding-right: 5vh !important;
+        &::after {
+            opacity: 1; /* Icon appears on hover */
+            transition: all 0.5s !important ;
+        }
+    }
+
+
+    /* butterfly */
