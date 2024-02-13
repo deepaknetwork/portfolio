@@ -14,10 +14,10 @@ const data=[
 
 const cont=[
     {id:1,image:"linkedin",link:"https://www.linkedin.com/in/deepakbasuvaraj/"},
-    {id:2,image:"gmail",link:"mailto:deepaksmail2004@gmail.com"},
-    {id:3,image:"insta",link:"https://www.instagram.com/__deepak___b/"},
+    {id:2,image:"gmail",link:"mailto:deepaksmail200@gmail.com"},
+    {id:3,image:"insta",link:"https://www.instagram.com/__deepak___/"},
     {id:4,image:"whatsapp",link:"https://wa.me/95850"},
-    {id:5,image:"git",link:"https://github.com/deepaknetwork"},
+    {id:5,image:"git",link:"https://github.com/deepaknetwor"},
     {id:6,image:"facebook",link:"https://www.facebook.com/deepak.mass.52687"}]
 
 export default data
