@@ -16,7 +16,7 @@ export default function ReactCard(props){
     }
     var a=props.rd.image
     const divStyle = {
-        backgroundImage: `url(${"/images/"+props.rd.image+".jpg"})`,
+        backgroundImage: `url(${"images/"+props.rd.image+".png"})`,
         backgroundSize: '100% 100%',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

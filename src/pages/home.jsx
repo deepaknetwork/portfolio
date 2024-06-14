@@ -6,7 +6,7 @@ export default function Home(){
     var conts=cont
     function Contact(p){
         const divStyle = {
-            backgroundImage: `url(${"/images/"+p.x.image+".png"})`,  
+            backgroundImage: `url(${"images/"+p.x.image+".png"})`,  
             backgroundSize: '100% 100%',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -20,7 +20,9 @@ export default function Home(){
         )
     }
 
-
+    function resume(){
+        window.location.href='https://drive.google.com/file/d/1MsBZEUHyb0wLd8c9e6FLbD9zLYbgVl2V/view?usp=sharing'
+    }
 
 
     //uuuuuuuuuuuuuuuuuuuuuuuuuuu
@@ -32,7 +34,7 @@ export default function Home(){
                 <span className="hi">Hi !</span>
                 <span className="deepak"> Im, Deepak</span>
                 <span className="tagline">Building the Future in Lines of Code</span>
-                <button className="btn">Check resume</button>
+                <button onClick={resume} className="btn">Check resume</button>
             </Col>
             <Col lg={5} xs={11} className="b2"></Col>
         </Row>

@@ -4,6 +4,7 @@ import Project from "./pages/Project";
 import Header from "./components/Header";
 import '../src/pages/home.css';
 import './app.css';
+import Certificate from "./pages/certificate";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
            <Route path="/portfolio" element={<Home />} />
            <Route path="/portfolio/home" element={<Home />} />
            <Route path="/portfolio/project" element={<Project />} />
+           <Route path="/portfolio/certificate" element={<Certificate />} />
       
       
     </Routes>
