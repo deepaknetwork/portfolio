@@ -63,4 +63,4 @@ jobs:
         with:
           app-name: 'mrdeepak'  # Your Azure Web App name
           slot-name: 'Production'  # Target production slot
-          package: './node-app/build'  # Correct path to the build directory
+          package: '.'  # Correct path to the build directory
