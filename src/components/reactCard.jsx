@@ -1,11 +1,17 @@
 import { Col, Row } from 'react-bootstrap';
 import './reactcard.css';
 import { useState } from 'react';
+// import rr from './RR.png';
 export default function ReactCard(props){
 
     const [isSlideUp, setIsSlideUp] = useState(false);
     console.log("load")
 
+    const [isHovered, setIsHovered] = useState(false);
+
+    // Handlers for mouse events
+    const handleMouseEnter = () => setIsHovered(true);
+    const handleMouseLeave = () => setIsHovered(false);
     function redirect(){
         setIsSlideUp(true);
         setTimeout(()=>{
@@ -15,29 +21,15 @@ export default function ReactCard(props){
        
     }
     var a=props.rd.image
-    const divStyle = {
-        backgroundImage: `url(${"images/"+props.rd.image+".png"})`,
-        backgroundSize: '100% 100%',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-        /* You can also senot more styles like backgroundRepeat, backgroundAttachment, etc. */
-    };
-
     
 return(
-    <Row className={`rcard ${isSlideUp ? 'slide-up' : ''}`} onClick={redirect}>
-    
-        <Col lg={4} xs={11} style={divStyle} className='rimg'></Col>
-        <Col lg={8} xs={11} className="rdis">
-            <div className='catdiv'>
-                 <span className='cat'>{props.rd.catagory}</span>
-            </div> 
-            <div className='catbody'>
-                <span className='catt'>{props.rd.title}</span>
-                <span>{props.rd.discription}</span>
-            </div>  
-        
-        </Col>
-    </Row>
+    <div className='col-11 col-lg-3 project_card'>
+        <span className='project_title'>{props.rd.title}</span>
+        {/* <img src={`images/${props.rd.image}.png`} className='col-12 col-lg-12 project_img'/> */}
+        <div className='col-12 col-lg-12 project_line'></div>
+        <span className='project_catagory'>{props.rd.catagory}</span>
+        <span className='project_discription'>{props.rd.discription}</span>
+        <a href={props.rd.link} class="project_link" target="_blank" >{props.rd.btn}</a>
+    </div>
 )
 }

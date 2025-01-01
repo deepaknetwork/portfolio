@@ -1,25 +1,32 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Project from "./pages/Project";
-import Header from "./components/Header";
 import '../src/pages/home.css';
 import './app.css';
 import Certificate from "./pages/certificate";
+import SideBar from "./components/SideBar";
+import { NavContext } from "./Data/data";
+import { useEffect, useState } from "react";
 
 function App() {
+  
+  var[navTab,setNavTab]=useState()
+  const [fontLoaded,setFontLoaded]=useState(false)
+ 
+  function changeNav(x){
+    setNavTab(x)
+  }
   return (
-    <BrowserRouter className="bb">
-    <Header />
+    <Router>
+    <NavContext.Provider value={{navTab,changeNav}} >
+    <SideBar />
     <Routes>
-
-           <Route path="/portfolio" element={<Home />} />
-           <Route path="/portfolio/home" element={<Home />} />
-           <Route path="/portfolio/project" element={<Project />} />
-           <Route path="/portfolio/certificate" element={<Certificate />} />
-      
-      
+           <Route path="/" element={<Home />} />
+           <Route path="/project" element={<Project />} />
+           <Route path="/certificate" element={<Certificate />} />
     </Routes>
-    </BrowserRouter>
+    </NavContext.Provider>
+    </Router >
   );
 }
 

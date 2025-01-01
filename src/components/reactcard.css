@@ -1,137 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-.container{
-    margin: 0 !important;
-}
-.rcard{
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.459);
-    padding: 1vh;
-    width: 70%;
-    transition: font-size 0.4s ease-in-out;
-    /* transition: transform 0.1s linear; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: fadeIn ease-in 1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    /* transition: transform 0.3s ease; */
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-
-.rcard:hover{
-    background-color: rgba(0, 0, 0, 0.55);
-    font-size: 1.5em; 
-    animation: vibrate 0.3s ease-in-out infinite;
-    opacity: 1;
-}
-@keyframes vibrate {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
-}
-.rimg{
-    height: 25vh;
-    width: 100%;
-    border-radius: 10px;
-    transition: height 0.4s ease-in-out;
-    transform: translateX(-100%);
-    animation: slideInLeft 1s forwards;
-}
-
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-
-}
-.rimg:hover{
-    height: 30vh;
-}
-.rdis{
+.project_card{
+    position: relative;
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0; /* Subtle border */
+    border-radius: 8px; /* Smooth corners */
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    padding-bottom: 2vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    justify-content: space-around;
-    align-items: center;
-    color: whitesmoke;
-    transition: all 0.7s ease-in-out;
-    transform: translateX(-100%);
-    animation: slideInRight 1s forwards;
-    
+    transition: all ease-in-out 0.3s;
+}
+.project_card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.414); /* Light shadow */
+}
+.project_img{
+    height: auto;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.189);
+}
+.project_line{
+    height: 1vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.189);
 }
 
-@keyframes slideInRight {
-    0% {
-        transform: translateX(+100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-
+.project_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 1vh;
 }
-
-
-
-/* uuuuuuuuuuu */
-@keyframes slideUp {
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-400%);
-    }
+.project_catagory{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(212, 86, 86); /* Optional for a subdued look */
+    margin: 0.2rem 0;
+    padding-top: 1vh;
 }
-
-.rcard.slide-up {
-    animation: slideUp 1s ease-in-out;
-}
-
-span:hover {
-    cursor: pointer;
-}
-
-.catdiv{
-    display: flex;
-    width: 100%;
-    justify-content: start;
-    padding-left: 3%;
-}
-.cat{
-    color: red;
-    font-family: 'Courier New',monospace;
-    font-size: 1.5em;
+.project_discription{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
     font-weight: 400;
+    line-height: 1.4;
+    color: #333333ad; /* Dark gray for contrast */
+    margin: 0.5rem 0;
 }
-.catt{
-    font-size: 1.5em;
-    font-family: 'Arial Black', sans-serif;
-    font-weight: 400;
-}
-.catbody{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 10%;
-    gap: 1vh;
-    font-family: 'Gill Sans', sans-serif;
+.project_link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none; /* Removes underline */
+    color: #007BFF; /* Modern blue color */
+    display: inline-block; /* Allows padding to work */
+    margin-top: 1rem; /* Space above the link */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
 }

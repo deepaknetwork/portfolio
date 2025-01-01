@@ -1,20 +1,21 @@
 import { Row } from 'react-bootstrap';
-import { cerData } from '../Data/data';
+import { NavContext, cerData } from '../Data/data';
 import Header from '../components/Header';
 import CertiCard from '../components/certiCard';
 import './certificate.css';
+import SideBar from '../components/SideBar';
+import { useContext } from 'react';
 
 export default function Certificate(){
-
+    var{navTab,changeNav}=useContext(NavContext)
+    changeNav("certificate")
+    window.scrollTo(0, 0);
     const data=cerData
     return(
-        <div className='certi'>
-              <Row className='rrcard'>
+        <div className='row certi'>
               {cerData.map(x=>{
                 return <CertiCard det={x}/>
             })}
-           
-            </Row>
         </div>
     )
     

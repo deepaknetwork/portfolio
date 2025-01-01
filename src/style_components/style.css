@@ -1,0 +1,70 @@
+/* PLUS */
+.plus{
+    position: relative;
+}
+.plus1{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    margin-left: 30%;
+    
+}
+.plus2{
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    margin-top: 30%;
+}
+
+
+/* LINEBAR */
+.linebar {
+    height: 85px;
+    width: 230px;
+    border-radius: 0 100px 100px 0;
+    position: relative;
+    overflow: hidden; 
+}
+.line {
+    height: 300%;
+    width: 1.5px;
+    background-color: rgb(28, 28, 69);
+    position: absolute;
+    top: -100%;
+    transition: all ease-in 1s;
+    transform: rotateZ(45deg) translateX(-60px);
+    animation: infinite 1s going;
+    animation-delay: 3s;
+}
+@keyframes going {
+    100%{
+        transform: rotateZ(45deg) translateX(-20px)
+    }
+    
+}
+
+
+/* quater circle */
+.top_circle{
+    border-radius: 0 0 90% 0;
+    border-top:none !important;
+    border-left:none !important;
+    position: relative;
+}
+.in_circle{
+    border-radius: 0 0 90% 0;
+    border-top:none !important;
+    border-left:none !important;
+}
+.top_line{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42%;
+}
+.left_line{
+    position: absolute;
+    left: 0;
+    bottom: 0 ;
+    height: 42%;
+}

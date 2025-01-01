@@ -4,11 +4,11 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function Header() {
     return(
-        <Container>
+        <Container className="header">
             <Row className="head " >
-                <Col className="i justify-content-center" lg={2} xs={10}><Link class="hlink " aria-current="page" to="/portfolio/home">Home</Link></Col>
-                <Col className="i justify-content-center" lg={2} xs={10}><Link class="hlink " aria-current="page" to="/portfolio/project">Projects</Link></Col>
-                <Col className="i justify-content-center" lg={2} xs={10}>< Link class="hlink " aria-current="page" to="/portfolio/certificate" >Certificates</Link ></Col>
+                <Col className="i justify-content-center" lg={2} xs={10}><Link class="hlink " aria-current="page" to="/">About</Link></Col>
+                <Col className="i justify-content-center" lg={2} xs={10}><Link class="hlink " aria-current="page" to="/project">Projects</Link></Col>
+                <Col className="i justify-content-center" lg={2} xs={10}>< Link class="hlink " aria-current="page" to="/certificate" >Certificates</Link ></Col>
             </Row>
 </Container>
  

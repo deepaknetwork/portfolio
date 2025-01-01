@@ -34,3 +34,13 @@
 .i{
     display: flex;
 }
+.header{
+    
+}
+
+@media (max-width:480px) {
+    .header{
+        display: none;
+        visibility: hidden !important;
+    }
+}
