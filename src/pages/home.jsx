@@ -69,7 +69,7 @@ export default function Home(){
                 </div>
                 <span className="tagline">Building the Future in Lines of Code</span>
                 <span className="dis">I am a passionate and dedicated web developer with strong skills in Spring Boot, MongoDB, and Docker. I specialize in building dynamic and scalable web applications, utilizing modern technologies to create efficient, containerized solutions and seamless user experiences</span>
-                <button onClick={resume} className="btn">Check resume!</button>
+                <button onClick={resume} className="btn">Check resume</button>
             </Col>
             <Col lg={5} xs={12} className="b2">
                 <img src={mine} className="img" alt="" />
