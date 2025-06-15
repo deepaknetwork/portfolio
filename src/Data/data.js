@@ -1,6 +1,7 @@
 import { createContext } from "react"
 
 const data=[
+    {btn:"Click to try!",id:14,catagory:"React & Express ",title:"HereThis",discription:"Bringing Music, Language, and Time Together.",image:"RR",link:"https://deepaknetwork.github.io/herethis"},
     {btn:"Click to try!",id:13,catagory:"React & Spring Boot ",title:"RoomieReserve",discription:"A simple and convenient room booking application.",image:"RR",link:"https://deepaknetwork.github.io/RR"},
     {btn:"Click to try!",id:1,catagory:".NET & Angular ",title:"CRM admin",discription:"A CRM admin application for managing customer interactions in a web development startup.",image:"crmadmin",link:"https://deepaknetwork.github.io/crmadmin"},
     {btn:"Click to try!",id:12,catagory:".NET & Angular",title:"CRM client",discription:"A customer-side application for interacting with services in a web development startup.",image:"crmuser",link:"https://deepaknetwork.github.io/crmuser"},
@@ -35,10 +36,10 @@ const cerData=[
 
 const cont=[
     {id:1,image:"linkedin",link:"https://www.linkedin.com/in/deepakbasuvaraj/"},
-    {id:2,image:"gmail",link:"mailto:deepaksmail200@gmail.com"},
-    {id:3,image:"insta",link:"https://www.instagram.com/__deepak___/"},
-    {id:4,image:"whatsapp",link:"https://wa.me/95850"},
-    {id:5,image:"git",link:"https://github.com/deepaknetwor"},
+    {id:2,image:"gmail",link:"mailto:deepaksmail2004@gmail.com"},
+    {id:3,image:"insta",link:"https://www.instagram.com/dpk.cmd/"},
+    {id:4,image:"whatsapp",link:"https://wa.me/9585010400"},
+    {id:5,image:"git",link:"https://github.com/deepaknetwork"},
     {id:6,image:"facebook",link:"https://www.facebook.com/deepak.mass.52687"}]
 
 

@@ -33,7 +33,7 @@ export default function Home(){
     }
 
     function resume(){
-        window.open('https://drive.google.com/file/d/1Q9GBDcMkgY0lSzXoU-XPXgFiNVvPQ97q/view?usp=sharing',"_blank")
+        window.open('https://drive.google.com/file/d/1IsFpCcvxQIA4AgTzRPj7gT9vh9ZMdDqp/view?usp=drive_link',"_blank")
     }
     function fix(){
         if(document.getElementById("hk1").classList.contains("hkD")){document.getElementById("hk1").classList.remove("hkD")}

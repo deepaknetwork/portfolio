@@ -32,6 +32,25 @@
     margin: 0;
     padding-left: 1vh;
 }
+.project_title_div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.project_sta_div{
+    /* border: black solid 1px;
+    border-radius: 5px; */
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 5px;
+    padding-right: 0.5vh;
+}
+.project_sta{
+    border: 0;
+    font-size: 0.8em;
+}
 .project_catagory{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
