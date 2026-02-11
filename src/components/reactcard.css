@@ -1,0 +1,79 @@
+.project_card{
+    position: relative;
+    background-color: #F5F5F5;
+    border: 1px solid #E0E0E0; /* Subtle border */
+    border-radius: 8px; /* Smooth corners */
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    display: flex;
+    flex-direction: column;
+    transition: all ease-in-out 0.3s;
+}
+.project_card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.414); /* Light shadow */
+}
+.project_img{
+    height: auto;
+    border-radius: 5px;
+    align-self: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.189);
+}
+.project_line{
+    height: 1vh;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.189);
+}
+
+.project_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 1vh;
+}
+.project_title_div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.project_sta_div{
+    /* border: black solid 1px;
+    border-radius: 5px; */
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 5px;
+    padding-right: 0.5vh;
+}
+.project_sta{
+    border: 0;
+    font-size: 0.8em;
+}
+.project_catagory{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(212, 86, 86); /* Optional for a subdued look */
+    margin: 0.2rem 0;
+    padding-top: 1vh;
+}
+.project_discription{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #333333ad; /* Dark gray for contrast */
+    margin: 0.5rem 0;
+}
+.project_link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none; /* Removes underline */
+    color: #007BFF; /* Modern blue color */
+    display: inline-block; /* Allows padding to work */
+    margin-top: 1rem; /* Space above the link */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}

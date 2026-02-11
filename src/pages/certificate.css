@@ -1,0 +1,8 @@
+.certi{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 !important;
+    gap: 5vh;
+    padding: 5vh 0 5vh 0;
+}

@@ -1,0 +1,41 @@
+.certi_card{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.certi_card:hover {
+    transform: translateY(-10px); 
+}
+
+.certi_platform{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #777;
+    margin-bottom: 8px;
+}
+.certi_title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+.certi_link{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
